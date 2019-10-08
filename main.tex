@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{epigraph}
+\usepackage{float}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{parskip}
+\usepackage{svg}
+\usepackage{array}
+\usepackage{tabu}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{amsfonts}
+
+\newcommand{\amount}{6in}   %%<---- adjust
+\newcommand\tab[1][0.8cm]{\hspace*{#1}}
+
+%checkmarks
+\setlist[itemize,2]{label=$\checkmark$}
+
+
+% Litt luft i margen for notater
+\usepackage[margin=1.5in]{geometry}
+\renewcommand*\familydefault{\sfdefault}
+
+% Fin spacing mellom linjene
+\linespread{1.5}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{DRAFT}
+%\SetWatermarkScale{3}
+
+\begin{document}
+
+
+
+\newcommand{\suppliername}{Ilder AS }
+\newcommand{\supplieradress}{Brugata 6, 5200 Os }
+
+\newcommand{\customername}{Norway Insight}
+\newcommand{\customeradress}{Holmedalsgården 3, 2 Floor. 5003 Bergen}
+
+\newcommand{\commencedate}{2019-10-07}
+
+
+
+
+\definecolor{marinecolor}{RGB}{51,51,51}
+
+
+
+
+%rgb 51,51,102
+
+
+\vspace{2.5in}
+\begingroup
+\centering
+\par\normalfont\fontsize{15}{20}\sffamily\selectfont
+\textbf{Kravspesifikasjon for Norway Insight}\\
+{\LARGE }\par % Book title
+\vspace*{1cm}
+{\large{av} }\par 
+\vspace{2cm} 
+\begin{center}
+  \centering
+  \includesvg{images/logo-small-solo.svg}
+\end{center}
+{\small{\commencedate} }\par % Author name
+\endgroup
+%Tweaking epigraph
+\setlength\epigraphwidth{.8\textwidth}
+\renewcommand{\epigraphflush}{center}
+
+
+\newpage
+\section{Introduksjon}
+Dette tilbudet kommer på forespørsel fra Hans Petter Torsvik, avtalt i videomøte 1. oktober 2019, og basert på tilsendt presentasjon av prosjektet til Norway Insight.
+
+\subsection{Bakgrunn for tilbud}
+Presentasjonen og møtet ga grunnlag for videre arbeid med kravspesifisering. Dette grunnlaget legger føringar for en del ønskede leveranser \customername har behov for med å kunne komme videre i prosessen med realisering av en digital reisehub. 
+
+Beskrivelse: \break
+Norway Insights gründer har gjennom 14 år bygget opp et unikt nettverk og en innsikt innen bærekraftig opplevelsesbasert turisme på Vestlandet. Denne innsikten gir oss mulighet til å skape en unik kundeopplevelse i 3 dimensjoner/faser;
+
+1.     Planleggings- og «drømme»-fasen – dette skal være en opplevelse i seg selv som man ønsker å dele med andre.
+
+2.     Gjennomførings-/leveransefasen – her legger vi listen høyt og har som mål å overraske den reisende med opplevelser «on the fly» når kunden først er i et område (f.eks. være med å sanke egg på den lokale gården)
+
+3.     Minne- og delingsfasen, her skal vi sikre god rating og at minnene og opplevelsene lever videre og deles på sosiale media. Vi skal også kunne fylle på med oppdatert informasjon om stedene man har besøkt.
+
+Den unike kundeopplevelsen skal være vårt fortrinn som skal gi økt kundevolum og økt interesse og engasjement hos våre underleverandører.
+
+ 
+
+\newpage
+\input{work.tex}
+
+\input{costs.tex}
+
+\newpage
+\input{signatures.tex}
+
+
+\end{document}
