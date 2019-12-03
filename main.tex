@@ -1,67 +1,21 @@
-\documentclass{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{epigraph}
-\usepackage{float}
-\usepackage[usenames, dvipsnames]{color}
-\usepackage{parskip}
-\usepackage{svg}
-\usepackage{array}
-\usepackage{tabu}
-\usepackage{tikz}
-\usepackage{enumitem}
-\usepackage{amsfonts}
-\usepackage[T1]{fontenc}
-\usepackage{spreadtab}
-\usepackage{numprint}
-\usepackage{booktabs} % for more table lines
-\usepackage{tabularx}
-
-
-
-\newcommand{\amount}{6in}   %%<---- adjust
-\newcommand\tab[1][0.8cm]{\hspace*{#1}}
-
-%checkmarks
-\setlist[itemize,2]{label=$\checkmark$}
-
-
-% Litt luft i margen for notater
-\usepackage[margin=1.5in]{geometry}
-\renewcommand*\familydefault{\sfdefault}
-
-% Fin spacing mellom linjene
-\linespread{1.5}
-
-%\usepackage{draftwatermark}
-%\SetWatermarkText{DRAFT}
-%\SetWatermarkScale{3}
-
-\begin{document}
-
+\input{templates/globalsetup.tex}
 
 
 \newcommand{\suppliername}{Ilder AS }
 \newcommand{\supplieradress}{Brugata 6, 5200 Os }
 
+\begin{document}
 
-\definecolor{marinecolor}{RGB}{51,51,51}
+% How to use this document
+% create folder for your new offer, prefix it with YYYY-MM to make it sortable somehow
+% copy paste a config.tex over there and bring with you necessary files. (you probably have to create a
+% new config.tex and paste into it...
 
-
-
-%rgb 51,51,102
-
-
-
-
-
-\newpage
-
+%Most recent offer, has various improvements to signatures, calculations, and setup
+\input{offers/2019-10-hfk-googledocs/config.tex}
 
 %\input{offers/2019-10-norway-insigths/config.tex}
-\input{offers/2019-10-hfk-googledocs/config.tex}
+
 
 
 \end{document}

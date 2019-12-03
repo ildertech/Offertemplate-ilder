@@ -8,15 +8,18 @@
 %Kjem på framsida
 \newcommand{\offertitle}{Spesifikasjon læreplassregnskap 2.0 }
 
-%Sett denne til mappa som config ligg i
-\newcommand*{\Offerpath}{offers/2019-10-hfk-googledocs/}%
-
-%Frontpage blir kompliert først. Men etter at variabler er satt
+%Frontpage blir kompilert først. Men etter at variabler er satt rett ovanfor her
 \input{templates/frontpage.tex}
 
-\newpage
+
+%Sett denne til mappa som config.tex ligg i
+\newcommand*{\Offerpath}{offers/2019-10-hfk-googledocs/}%
 
 \newpage
+
+\input{\Offerpath/intro.tex}
+
+\input{\Offerpath/work.tex}
 
 \input{\Offerpath/costs.tex}
 
