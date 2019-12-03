@@ -1,0 +1,27 @@
+\section{Monthly costs}
+Dette er et fastpristilbud begrenset oppad til 80 timer og 6 uker.
+
+% a1 b1 c1
+% a2 b2 c2 osv
+
+\begin{table}[!ht]
+    \renewcommand\STprintnum[1]{\numprint{#1}}
+    \nprounddigits{0}
+    \npthousandsep{ }
+    \npdecimalsign{.}
+
+\begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
+@ \textbf{Named service}     & @ \textbf{Eks MVA}    & @ \textbf{Inkl MVA}   \\ \hline
+@ Access manager             & 17500                 & b2*1.25               \\ \hline
+@ API manager                & 22500                 & b3*1.25               \\ \hline
+@ GDPR Plugin                & 7500                 & b4*1.25               \\ \hline
+%@ Placeholder          & 9                     & 2            \\
+%@ Placeholder          & 13                    & 15           \\ \hline
+                        & @ \textbf{Totalt}    & sum(c2:c4)       
+\end{spreadtab}
+\end{table} 
+
+
+\subsection{Payment}
+
+Alle faktura har normalt 14 dagers betalingsfrist. \\
