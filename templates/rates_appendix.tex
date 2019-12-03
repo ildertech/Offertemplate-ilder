@@ -8,7 +8,7 @@
 \addcontentsline{toc}{section}{Appendix - Rates}
 
 
-Unless otherwise specified in the document, these are the general rates that 
+Unless otherwise specified in the document, these are the general rates offered by \suppliername. 
 
 \begin{table}[!ht]
     \renewcommand\STprintnum[1]{\numprint{#1}}
@@ -21,12 +21,22 @@ Unless otherwise specified in the document, these are the general rates that
 \begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
 @ \textbf{Rates in NOK}     & @ \textbf{Ex VAT}   & @ \textbf{Inc VAT}   \\ \hline
 @ Senior consultant (PhD / Field expert)          & \ratesenior                 & b2*1.25               \\ \hline
-@ Consultant                                      & 910                 & b3*1.25               \\ \hline
-@ Junior Consultant                               & 550                 & b4*1.25               \\ \hline
-@ Outsourced developer (Poland)                   & 470                 & b5*1.25               \\ \hline
-%@ Placeholder          & 9                     & 2            \\
-%@ Placeholder          & 13                    & 15           \\ \hline
-%                        & @ \textbf{Totalt}    & sum(c2:c2)        &
+@ Consultant (development back/front end)         & \rateconsultant                 & b3*1.25               \\ \hline
+@ Junior Consultant                               & \ratejunior                 & b4*1.25               \\ \hline
 \end{spreadtab}
+\end{table} 
 
+\begin{table}[!ht]
+    \renewcommand\STprintnum[1]{\numprint{#1}}
+    \nprounddigits{0}
+    \npthousandsep{ }
+    \npdecimalsign{.}
+
+%EKSTREMT hårsår på whitespace, alle linjer rett underkvarndar
+
+\begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
+@ \textbf{Rates in EUR}     & @ \textbf{Ex VAT}   & @ \textbf{Inc VAT}   \\ \hline
+@ Outsourced developer - Poland (Systems development)                   & \ratezaven                 & b2*1.25               \\ \hline
+@ Outsourced developer - Finland (PhD, machine learning, field expert)         & \ratesolita                 & b3*1.25               \\ \hline
+\end{spreadtab}
 \end{table} 
