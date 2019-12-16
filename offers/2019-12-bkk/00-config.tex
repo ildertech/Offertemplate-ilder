@@ -1,0 +1,30 @@
+%Kanskje ein liten kommentar til tilbodet for historikken sin del
+%Her
+
+\newcommand{\customername}{Plug / BKK }
+\newcommand{\customeradress}{Holmedalsgården 3, 2 Floor. 5003 Bergen}
+\newcommand{\commencedate}{2019-12-16}
+
+%Kjem på framsida
+\newcommand{\offertitle}{Plug - MVP1 and MVP2 estimates}
+
+%Sett denne til mappa som config ligg i
+\newcommand*{\Offerpath}{offers/2019-12-bkk/}%
+
+%Frontpage blir kompliert først. Men etter at variabler er satt
+\input{templates/frontpage.tex}
+
+\newpage
+\input{\Offerpath/01-intro.tex}
+
+\newpage
+\input{\Offerpath/02-work.tex}
+
+\input{\Offerpath/03-costs.tex}
+
+
+\newpage
+\input{templates/signatures.tex}
+
+
+\input{templates/rates_appendix.tex}

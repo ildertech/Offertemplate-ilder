@@ -1,0 +1,56 @@
+\section{Estimates}
+The below estimates are based on investigations of mainly Powercons API documentation. Tables below show the hours we suspect 
+
+The cost estimates are based on an average hourly rate of \textbf{1050 NOK}. 
+
+% a1 b1 c1
+% a2 b2 c2 osv
+
+\subsection{MVP 1 - Phase}
+
+\begin{table}[!ht]
+    \renewcommand\STprintnum[1]{\numprint{#1}}
+    \nprounddigits{0}
+    \npthousandsep{ }
+    \npdecimalsign{.}
+
+\begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
+@ \textbf{Named service}     & @ \textbf{Eks MVA}    & @ \textbf{Inkl MVA}   \\ \hline
+@ Access manager             & 22500                 & b2*1.25               \\ \hline
+@ API manager                & 13500                 & b3*1.25               \\ \hline
+@ GDPR Plugin                & 7200                 & b4*1.25               \\ \hline
+@ Biztech portal             & 7200                 & b5*1.25               \\ \hline
+@ AMC                        & 7200                 & b6*1.25               \\ \hline
+@ Adhub                      & 7200                 & b7*1.25               \\ \hline
+@ IPTool                     & 7200                 & b8*1.25               \\ \hline
+@ Aeolus                     & 9000                 & b7*1.25               \\ \hline
+@ Azure in general           & 9000                 & b10*1.25               \\ \hline
+%@ Placeholder          & 9                     & 2            \\
+%@ Placeholder          & 13                    & 15           \\ \hline
+@ \textbf{Total}        & sum(b2:b10) & sum(c2:c10)       
+\end{spreadtab}
+\end{table} 
+
+\subsection{Phase 2- Ship and customer UX}
+
+\begin{table}[!ht]
+    \renewcommand\STprintnum[1]{\numprint{#1}}
+    \nprounddigits{0}
+    \npthousandsep{ }
+    \npdecimalsign{.}
+
+\begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
+@ \textbf{Named service}     & @ \textbf{Eks MVA}    & @ \textbf{Inkl MVA}   \\ \hline
+@ OAuth                      & 20                 & b2*1050               \\ \hline
+@ Dashboard front end        & 75                 & b3*1050               \\ \hline
+@ Dashboard back end        & 20                 & b4*1050               \\ \hline
+@ Specification work         & 60                 & b5*1050               \\ \hline
+%@ Placeholder          & 9                     & 2            \\
+%@ Placeholder          & 13                    & 15           \\ \hline
+@ \textbf{Total}        & sum(b2:b5) & sum(c2:c5)       
+\end{spreadtab}
+\end{table} 
+
+
+\subsection{Payment}
+All invoices are issued beginning each month with a due date of 14 days. One invoice specified for Named services along with an optional variable service invoice.
