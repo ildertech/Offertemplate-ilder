@@ -1,7 +1,7 @@
-\section{Estimates}
-The below estimates are based on investigations of mainly Powercons API documentation. Tables below show the hours we suspect 
+\section{Estimates}\label{section:estimates}
+The below estimates are based on investigations of mainly Powercons API documentation and an optimal bureaucracy. There still exists many unknowns and this estimate should be considered as an estimate and not a fixed price offer.
 
-The cost estimates are based on an average hourly rate of \textbf{1050 NOK}. 
+The cost estimates are based on an average hourly rate of \textbf{1050 NOK}. The following tables divide the work as described above into logically grouped entities.
 
 % a1 b1 c1
 % a2 b2 c2 osv
@@ -15,19 +15,13 @@ The cost estimates are based on an average hourly rate of \textbf{1050 NOK}.
     \npdecimalsign{.}
 
 \begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
-@ \textbf{Named service}     & @ \textbf{Eks MVA}    & @ \textbf{Inkl MVA}   \\ \hline
-@ Access manager             & 22500                 & b2*1.25               \\ \hline
-@ API manager                & 13500                 & b3*1.25               \\ \hline
-@ GDPR Plugin                & 7200                 & b4*1.25               \\ \hline
-@ Biztech portal             & 7200                 & b5*1.25               \\ \hline
-@ AMC                        & 7200                 & b6*1.25               \\ \hline
-@ Adhub                      & 7200                 & b7*1.25               \\ \hline
-@ IPTool                     & 7200                 & b8*1.25               \\ \hline
-@ Aeolus                     & 9000                 & b7*1.25               \\ \hline
-@ Azure in general           & 9000                 & b10*1.25               \\ \hline
-%@ Placeholder          & 9                     & 2            \\
-%@ Placeholder          & 13                    & 15           \\ \hline
-@ \textbf{Total}        & sum(b2:b10) & sum(c2:c10)       
+@ \textbf{Logical component}                    & @ \textbf{Hours}    & @ \textbf{Cost ex. vat}   \\ \hline
+@ Powercon integration                          & 50                 & b2*1050               \\ \hline
+@ Azure (DBs, services, api)                    & 40                 & b3*1050               \\ \hline
+@ Data batching / processing                    & 10                 & b4*1050               \\ \hline
+@ Front-end work                                & 70                 & b5*1050               \\ \hline
+@ \textit{Administration (15percent)}           & sum(b2:b5)*0.15    & b6*1050               \\ \hline
+@ \textbf{Total}                                & sum(b2:b6)        & sum(c2:c6)       
 \end{spreadtab}
 \end{table} 
 
@@ -40,14 +34,13 @@ The cost estimates are based on an average hourly rate of \textbf{1050 NOK}.
     \npdecimalsign{.}
 
 \begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
-@ \textbf{Named service}     & @ \textbf{Eks MVA}    & @ \textbf{Inkl MVA}   \\ \hline
-@ OAuth                      & 20                 & b2*1050               \\ \hline
-@ Dashboard front end        & 75                 & b3*1050               \\ \hline
-@ Dashboard back end        & 20                 & b4*1050               \\ \hline
-@ Specification work         & 60                 & b5*1050               \\ \hline
-%@ Placeholder          & 9                     & 2            \\
-%@ Placeholder          & 13                    & 15           \\ \hline
-@ \textbf{Total}        & sum(b2:b5) & sum(c2:c5)       
+@ \textbf{Logical component}                    & @ \textbf{Hours}    & @ \textbf{Cost ex. vat}   \\ \hline
+@ OAuth                                         & 20                  & b2*1050               \\ \hline
+@ Dashboard front end                           & 65                  & b3*1050               \\ \hline
+@ Dashboard back end                            & 30                  & b4*1050               \\ \hline
+@ Specification work                            & 40                  & b5*1050               \\ \hline
+@ \textit{Administration (15percent)}           & sum(b2:b5)*0.15     & b6*1050               \\ \hline
+@ \textbf{Total}                                & sum(b2:b6)          & sum(c2:c6)       
 \end{spreadtab}
 \end{table} 
 

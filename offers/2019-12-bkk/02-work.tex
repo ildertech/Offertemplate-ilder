@@ -1,13 +1,38 @@
 \section{Work}
+The two work packages detailed in this estimate have been christened MVP1 and MVP2 informally in a workshop. Since the workshop the scope has changed somewhat as \suppliername has been in contact with \customername regarding additional desired features needed. 
+
+Furthermore, as more information from shore power suppliers arrived the following days the estimate will be adjusted further to reflect a more detailed understanding of the complexities.
+
+This section will list the overarching components needed for a bare bones MVP solution. The goal with these MVP phases is to have something up and running in a production environment suitable for continuous and steady refinement and enhancement as needs and opportunities arise. 
+
+Cost estimates for these phases can be found in section ~\ref{section:estimates}.
 
 
+\subsection{MVP1 - Phase 1}
+MPV1 is the first phase of the project with an overarching goal of establishing an infrastructure for development, starting data gathering and provide rudimentary user interface for data extraction and manipulation.
 
-\subsection{MVP - Phase 1}
+\subsubsection{Integrating Powercon and cloud infrastructure}
+First and foremost we will bring data from Powercon via websockets \footnote{\url{https://en.wikipedia.org/wiki/WebSocket}} over SSL into a suitable API structure for use by \customername. This includes storage of transactional data in CosmosDB \footnote{\url{https://azure.microsoft.com/en-us/services/cosmos-db/}} as well as a API management in azure using \footnote{\url{https://azure.microsoft.com/en-us/services/api-management/}}. A separate MSSQL database will be created to store and manage relational data \footnote{\url{https://azure.microsoft.com/en-us/services/sql-database/}}. Separatly an app service \footnote{\url{https://docs.microsoft.com/en-us/azure/app-service/}} will be created to create specific APIs and host a front end. Separatly a email service will be implemented to facilitate email notifications and password resets etc using SendGrid \footnote{\url{https://sendgrid.com/docs/for-developers/partners/microsoft-azure/}}.
+
+\subsubsection{Front end matter}
+A rudimentary front end will be created to handle authentication, listing relevant invoice data and editing relevant metadata. The end user will be expected to be a pro user at the MVP stage.
+
+\subsection{MVP2 - Phase 2}
+
+\subsubsection{My ship}
+In phase 2 we will create what is colloquially called "Ship interface" using DEKO. Using technology and UX components from DEKO we will enable users to sign in using Oauth, provide users with a Dashboard with information about "My ship" containing information about the hip, invoice information and the VAT Declaration. This front-end matter will be created to ensure a pleasant user experience.
+
+\subsubsection{Data specification}
+Furthermore, by using the knowledge gained in Phase 1 we can create a specification template for hardware suppliers to integrate with the new API offered by \customername.
+
+\subsection{Additional - outside estimate scope}
 
 
-\subsection{MVP - Phase 2}
+Integration with ElHub data (ElHub Web Plugin\footnote{\url{https://elhub.no/om-elhub/elhub-for-sluttbruker/elhub-web-plugin/}}) for comparing measured data from BKK Nett, and last energy measurement point for ship.
 
+Close integration Safeseanet for VAT declaration \footnote{\url{https://shiprep.no/ShipRepWebUI/Pages/WebServices/Services.aspx}}
 
-\subsection{MVP - Additonal}
+Interacitve widget to showing real time data from shorepower systems on webpage for marketing purposes (i.e x amounts of CO2 not sent into atmosphere today)
 
-Målersaken
+\subsection{Timeframe}
+MVP1 can have kickoff early January and is estimated to be finished early March. MVP2 should be ready by early May, 2020.
