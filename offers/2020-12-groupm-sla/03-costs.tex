@@ -1,5 +1,5 @@
 \section{Monthly costs}
-Below the various named services are specified
+Below the various named services cost specified in NOK ex VAT.
 
 % a1 b1 c1
 % a2 b2 c2 osv
@@ -10,20 +10,24 @@ Below the various named services are specified
     \npthousandsep{ }
     \npdecimalsign{.}
 
-\begin{spreadtab}{{tabularx}{\textwidth}{ X  r | r }}
-@ \textbf{Named service}     & @ \textbf{Cost}      \\ \hline
-@ Access manager             & 20000                \\ \hline
-@ API manager                & 5000                 \\ \hline
-@ GDPR Plugin                & 7000                 \\ \hline
-@ Biztech portal             & 7000                 \\ \hline
-@ AMC                        & 7000                 \\ \hline
-@ Aeolus                     & 7000                 \\ \hline
+\begin{spreadtab}{{tabularx}{\textwidth}{X X | r }}
+@ \textbf{Service}      & @ \textbf{Type}        & @ \textbf{Cost}      \\ \hline
+@ IP Tool               &@ Light Surveillance    & 2000                \\ \hline
+@ Aeouls                &@ Light Surveillance    & 2000                 \\ \hline
+@ Access manager        &@ Light Surveillance    & 2000                 \\ \hline
+@ API manager           &@ Light Surveillance    & 2000                 \\ \hline
+@ GDPR plugin           &@ Light Surveillance    & 2000                 \\ \hline
+@ AMC                   &@ Light Surveillance    & 2000                 \\ \hline
+@ Mediatrader           &@ Active partner        & 10000                 \\ \hline
+@ Beam                  &@ Active partner        & 10000                 \\ \hline
+@ Data steward          &@ Active partner        & 10000                 \\ \hline
+@ Contract and financial&@ Active partner        & 10000                 \\ \hline
 %@ Placeholder          & 9                     & 2            \\
 %@ Placeholder          & 13                    & 15           \\ \hline
-@ \textbf{Total}        & sum(b2:b7)      
+@ \textbf{Total pr month}        &@                       & sum(c2:c11)    
 \end{spreadtab}
 \end{table} 
 
 
 \subsection{Payment}
-All invoices are issued beginning each month with a due date of 14 days. One invoice specified for Named services along with an optional variable service invoice.
+All invoices are issued beginning each month with a due date of 14 days. The invoice will contain the fixed amount above, additional hours will be specified.
